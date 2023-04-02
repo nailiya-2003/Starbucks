@@ -1,1 +1,1 @@
-# Starbucks # Starbucks
+# Responsive Starbucks Website
