@@ -148,7 +148,9 @@ header ul li a{
     }
     header ul {
         position: relative;
-        display: none;
+    }
+    header ul li {
+        display: block;
     }
     section {
         padding: 20px;
@@ -202,5 +204,30 @@ header ul li a{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        border: 1px solid#000 ;
+        z-index: 11;
+    }
+    .toggle.active {
+        background: url('img/menu.png');
+        color: #333;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .navigation {
+        display: none;
+    }
+   .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
     }
 }

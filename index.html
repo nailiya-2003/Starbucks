@@ -11,14 +11,17 @@
     <section>
         <header>
             <div class="circle"></div>
-            <a href="#"> <img src="img/logo.png" class="logo" alt="logo"></a>
-            <div class="toggle active" onclick="togglemenu()"></div>
+            <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+            <div class="toggle active" onclick="togglemenu();"></div>
+            <div class="navigation active" onclick="togglemenu();">
             <ul>
                 <li><a href="#" class="menu">Home</a></li>
                 <li><a href="#" class="menu">Menu</a></li>
                 <li><a href="#" class="menu">What's New</a></li>
                 <li><a href="#" class="menu">Contact</a></li>
             </ul>
+        </div>
+    </div>
         </header>
         <div class="content">
             <div class="textbox">
@@ -49,8 +52,10 @@
             circle.style.background = color;
             }
             function togglemenu() {
-                var menuToggle = document.querySelector('.toggle')
-                menuToggle.classList.toggle('active')
+                var menuToggle = document.querySelector('.toggle');
+                var navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
             }
         </script>
     </section>
